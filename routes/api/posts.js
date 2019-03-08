@@ -33,6 +33,7 @@ router.post(
     if (typeof req.body.m_tag !== "undefined") {
       req.body.m_tag = req.body.m_tag.split(",");
     }
+
     const newPost = new Post({
       m_url: req.body.m_url,
       m_title: req.body.m_title,
